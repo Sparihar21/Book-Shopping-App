@@ -1,0 +1,12 @@
+E:\CS\ASP Core\Ecom_Book_main\Ecom_Book_main_Models\bin\Debug\net6.0\Ecom_Book_main_Models.deps.json
+E:\CS\ASP Core\Ecom_Book_main\Ecom_Book_main_Models\bin\Debug\net6.0\Ecom_Book_main_Models.dll
+E:\CS\ASP Core\Ecom_Book_main\Ecom_Book_main_Models\bin\Debug\net6.0\Ecom_Book_main_Models.pdb
+E:\CS\ASP Core\Ecom_Book_main\Ecom_Book_main_Models\obj\Debug\net6.0\Ecom_Book_main_Models.csproj.AssemblyReference.cache
+E:\CS\ASP Core\Ecom_Book_main\Ecom_Book_main_Models\obj\Debug\net6.0\Ecom_Book_main_Models.GeneratedMSBuildEditorConfig.editorconfig
+E:\CS\ASP Core\Ecom_Book_main\Ecom_Book_main_Models\obj\Debug\net6.0\Ecom_Book_main_Models.AssemblyInfoInputs.cache
+E:\CS\ASP Core\Ecom_Book_main\Ecom_Book_main_Models\obj\Debug\net6.0\Ecom_Book_main_Models.AssemblyInfo.cs
+E:\CS\ASP Core\Ecom_Book_main\Ecom_Book_main_Models\obj\Debug\net6.0\Ecom_Book_main_Models.csproj.CoreCompileInputs.cache
+E:\CS\ASP Core\Ecom_Book_main\Ecom_Book_main_Models\obj\Debug\net6.0\Ecom_Book_main_Models.dll
+E:\CS\ASP Core\Ecom_Book_main\Ecom_Book_main_Models\obj\Debug\net6.0\refint\Ecom_Book_main_Models.dll
+E:\CS\ASP Core\Ecom_Book_main\Ecom_Book_main_Models\obj\Debug\net6.0\Ecom_Book_main_Models.pdb
+E:\CS\ASP Core\Ecom_Book_main\Ecom_Book_main_Models\obj\Debug\net6.0\ref\Ecom_Book_main_Models.dll

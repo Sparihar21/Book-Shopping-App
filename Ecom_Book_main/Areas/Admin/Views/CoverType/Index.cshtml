@@ -1,0 +1,21 @@
+﻿<div class="row">
+    <div class="col-9">
+        <h2 class="text-primary">CoverType List</h2>
+    </div>
+    <div class="col-3">
+        <a class="btn btn-success" asp-action="Upsert"><i class="fas fa-plus"></i>&nbsp; Add New CoverType</a>
+    </div>
+</div>
+<div class="container m-2 p-2">
+<table class="table table-active table-bordered table-hover" id="tbldata">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+</table>
+</div>
+@section Scripts{
+    <script src="~/js/CoverType.js"></script>
+}

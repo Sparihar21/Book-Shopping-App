@@ -1,0 +1,37 @@
+﻿@model Ecom_Book_main_Models.CoverType
+@{
+    ViewData["Title"] = "Upsert";
+    var title = Model.Id != 0 ? "Edit CoverType" : "New CoverType";
+}
+<div class="row">
+    <div class="col-10">
+        <h2 class="text-primary">@title</h2>
+    </div>
+    <form method="post">
+        <div class="text-bg-danger" asp-validation-summary="ModelOnly"></div>
+        <div class="col-8">
+            <div class="row form-group">
+                <div class="col-4">
+                    <label asp-for="Name"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="row form-group  m-2 p-2">
+                    <div class="col-8 offset-4">
+                        @if (Model.Id == 0)
+                        {
+                            <partial name="_createandbacktolistbutton"></partial>
+                        }
+                        else
+                        {
+                            <partial name="_updateandbacktolistbutton"></partial>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+

@@ -1,0 +1,69 @@
+﻿var dataTables;
+
+$(document).ready(function () {
+    loadDataTable();
+});
+
+function loadDataTable() {
+    dataTables = $("#tbldata").dataTable({
+        "ajax": {
+            "url": "/Admin/Company/GetAll"
+        },
+        "columns": [{ "data": "name", "width": "15%" },
+            { "data": "streetAddress", "width": "15%" },
+            { "data": "city", "width": "15%" },
+            { "data": "state", "width": "15%" },
+            { "data": "phoneNumber", "width": "15%" },
+            {
+                "data": "isAuthorized", "render": function (data) {
+                    if (data) {
+                        return `<input type="checkbox" checked disabled/>`;
+                    }
+                    else {
+                        return `<input type="checkbox" disabled/>`;
+                    }
+
+                }
+            },
+
+        {
+            "data": "id",
+            "render": function (data) {
+
+                return `<div class="text-center">
+                            <a href="/Admin/Company/Upsert/${data}" class="btn btn-info"><i class="fas fa-edit"></i></a>
+                            <a onclick="Delete('/Admin/Company/Delete/${data}')" class="btn btn-danger"><i class="fas fa-trash-alt"></i></a>
+
+`;
+            }
+        }
+        ]
+    })
+
+};
+
+function Delete(url) {
+    swal({
+        title: "Are You Sure",
+        text: "WAnt to Delete Data",
+        icon: "warning",
+        buttons: true,
+        dangerMode:true
+    }).then((willDelete) => {
+        if (willDelete) {
+            $.ajax({
+                url: url,
+                type: "DELETE",
+                success: function (data) {
+                    if (data.success) {
+                        toastr.success(data.message);
+                        $("#tbldata").DataTable().ajax.reload();
+                    }
+                    else {
+                        toastr.error(data.message);
+                    }
+                }
+                })
+        }
+    })
+}

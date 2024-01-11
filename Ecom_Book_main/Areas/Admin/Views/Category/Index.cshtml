@@ -1,0 +1,23 @@
+﻿<div class="row">
+    <div class="col-9">
+        <h2 class="text-secondary">Category List</h2>
+    </div>
+    <div class="col-3">
+        <a class="btn btn-success form-control" asp-action="Upsert"><i class="fas fa-plus"></i>&nbsp; Add Category</a>
+    </div>
+</div>
+<div class="container rounded-border p-2 m-2">
+    <table class="table table-active table-hover table-bordered table-striped" id="tbldata">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+    </table>
+</div>
+
+
+@section scripts{
+    <script src="~/js/Category.js"></script>
+}
